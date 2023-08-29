@@ -1,7 +1,7 @@
 // Obtener la cantidad de botones con la clase "drum" en el documento
 var numeroBotones = document.querySelectorAll(".drum").length;
 
-// Agregar un event listener de clic a cada botón
+// Esta parte del código sirve para detectar evento click para cada sonido
 for (var i = 0; i < numeroBotones; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         // Obtener el contenido interno del botón que se hizo clic
@@ -15,7 +15,7 @@ for (var i = 0; i < numeroBotones; i++) {
     });
 }
 
-// Agregar un event listener de teclado al documento
+// Esta parte del código sirve para detectar evento teclado para cada sonido
 document.addEventListener("keydown", function (event) {
     // Obtener la tecla presionada en el teclado
     sonido(event.key);
